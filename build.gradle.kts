@@ -1,7 +1,7 @@
 plugins {
     val kotlinVersion = "1.2.41"
 
-    application // Required for Gradle Kotlin DSL
+    java // Application is required by Gradle Kotlin DSL, but Travis runs assemble task that work not with application only
 
     // Plugins used by submodules only
     kotlin("jvm") version kotlinVersion apply false
