@@ -7,6 +7,7 @@ plugins {
     kotlin("jvm") version kotlinVersion apply false
     kotlin("plugin.spring") version kotlinVersion apply false
     id("org.springframework.boot") version "1.5.4.RELEASE" apply false
+    id("com.bmuschko.docker-remote-api") version "3.2.8" apply false
 }
 
 // Configure Kotlin and Spring Boot for all Projects
@@ -17,6 +18,7 @@ subprojects {
         plugin("kotlin")
         plugin("kotlin-spring")
         plugin("org.springframework.boot")
+        plugin("com.bmuschko.docker-remote-api")
     }
 
     repositories {
